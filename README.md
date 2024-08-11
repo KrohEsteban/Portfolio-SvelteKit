@@ -1,38 +1,33 @@
-# create-svelte
+## Profolio
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+Este es el Portfolio de Esteban Kroh.
+Lo pueden encontra online en [www.estebankroh.com](https://estebankroh.com)
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Para correr el contenedor en desarrollo ejecutar los siguientes comando:
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+cp .env.example .env
+docker compose up dev
 ```
 
-## Building
-
-To create a production version of your app:
+Para correr el contenedor en producción ejecutar los siguientes comando:
 
 ```bash
-npm run build
+cp .env.dist .env
+docker compose build prod
+docker compose run prod
 ```
 
-You can preview the production build with `npm run preview`.
+#### Comandos útiles
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Revisar las versiones de las dependencias del package.json:
+
+```bash
+docker compose run --rm cli ncu
+```
+
+Actualizar todas las dependencias del package.json:
+
+```bash
+docker compose run --rm cli ncu -u
+```

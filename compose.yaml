@@ -1,0 +1,45 @@
+version: '3'
+
+name: portfolio-sveltekit
+services:
+  cli:
+    build:
+      context: ./
+      target: builder
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./:/app/
+    env_file:
+      - ./.env
+    command: sh
+    networks:
+      - portfolio
+
+  dev:
+    build:
+      context: ./
+      target: dev
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./:/app/
+    env_file:
+      - ./.env
+    ports:
+      - "5173:5173"
+    networks:
+      - portfolio
+
+  prod:
+    build:
+      context: ./
+      target: prod
+      dockerfile: ./Dockerfile
+    env_file:
+      - ./.env
+    ports:
+      - "3000:3000"
+    networks:
+      - portfolio
+
+networks:
+  portfolio:
