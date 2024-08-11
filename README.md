@@ -1,6 +1,6 @@
-# Profolio
+# Portfolio
 
-Este repositorio contiene el código para el portfolio personal de Esteban Kroh, construido con SvelteKit y desplegado usando Docker. Lo pueden encontra online en [www.estebankroh.com](https://estebankroh.com)
+Este repositorio contiene el código para el portfolio personal de Esteban Kroh, construido con SvelteKit y desplegado usando Docker. Lo pueden encontrar online en [www.estebankroh.com](https://estebankroh.com)
 
 ## Deploy
 
@@ -15,9 +15,9 @@ Para correr el contenedor en producción ejecutar los siguientes comandos:
 
 ```bash
 cp .env.example .env
-docker compose build prod nginx certbot
+docker compose build prod certbot nginx
 docker compose run --rm certbot certonly --webroot --webroot-path=/var/www/certbot -d $DOMAIN_NAME
-docker compose up -d prod nginx certbot
+docker compose up -d prod certbot nginx
 ```
 
 ## Comandos útiles
@@ -28,10 +28,22 @@ Revisar las versiones de las dependencias del package.json:
 docker compose run --rm cli ncu
 ```
 
+Revisar las versiones de las dependencias globales:
+
+```bash
+docker compose run --rm cli ncu -g
+```
+
 Actualizar todas las dependencias del package.json:
 
 ```bash
 docker compose run --rm cli ncu -u
+```
+
+Revisa los errores ortográficos (check spelling)
+
+```bash
+docker compose run --rm cli cspell "./"
 ```
 
 ## Ayuda memoria sobre la configuración
@@ -104,3 +116,8 @@ El archivo compose.yaml define los siguientes servicios:
 
 - Reemplaza las variables de entorno en la plantilla de configuración de Nginx.
 - Inicia Nginx en primer plano.
+
+3. .cspell.json:
+
+- Configuración básica de cspell check para que detecte errores en español.
+- Wild list de palabras utilizadas en el proyecto.

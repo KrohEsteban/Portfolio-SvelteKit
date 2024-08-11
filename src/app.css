@@ -77,7 +77,7 @@
 		@apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg];
 	}
 
-	.sinbrillo {
+	.sin_brillo {
 		margin: 0 auto;
 		margin-top: 15px;
 		margin-bottom: 15px;
@@ -91,8 +91,8 @@
 		text-decoration: none;
 	}
 
-	.sinbrillo:after,
-	.sinbrillo:before {
+	.sin_brillo:after,
+	.sin_brillo:before {
 		width: 80px;
 		height: 300%;
 		content: '';
@@ -104,11 +104,11 @@
 		transition: none;
 	}
 
-	.sinbrillo:before {
+	.sin_brillo:before {
 		left: -500px;
 	}
 
-	.sinbrillo:after {
+	.sin_brillo:after {
 		right: -500px;
 	}
 
@@ -141,10 +141,10 @@
 
 	.brillo:before {
 		left: -500px;
-		animation: animacionbuttonbefore 2s linear 1;
+		animation: animation_button_before 2s linear 1;
 	}
 
-	@keyframes animacionbuttonbefore {
+	@keyframes animation_button_before {
 		to {
 			left: 1500px;
 			background: rgba(255, 255, 255, 0.1);
@@ -153,10 +153,10 @@
 
 	.brillo:after {
 		right: -500px;
-		animation: animacionbuttonafter 2s linear 1;
+		animation: animation_button_after 2s linear 1;
 	}
 
-	@keyframes animacionbuttonafter {
+	@keyframes animation_button_after {
 		to {
 			right: 1500px;
 			background: rgba(255, 255, 255, 0.1);
@@ -200,21 +200,21 @@
 	.handwriting svg .texto {
 		stroke-dasharray: 9000;
 		stroke-dashoffset: 9000;
-		animation: animacion 7s linear 1 forwards;
+		animation: animation 7s linear 1 forwards;
 	}
 
-	@keyframes animacion {
+	@keyframes animation {
 		to {
 			stroke-dashoffset: 0;
 		}
 	}
 
-	.animacionopacidad {
+	.animation-opacity {
 		opacity: 0;
-		animation: animacionopacity 4s linear 1 forwards;
+		animation: animation_opacity 4s linear 1 forwards;
 	}
 
-	@keyframes animacionopacity {
+	@keyframes animation_opacity {
 		to {
 			opacity: 1;
 		}

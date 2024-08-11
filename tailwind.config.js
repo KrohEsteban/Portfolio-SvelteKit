@@ -10,9 +10,9 @@ export default {
 				amarillo: '#fbbf24'
 			},
 			fontFamily: {
-				dancingscript: ['DancingScript', 'italic'],
-				opensans: ['OpenSans'],
-				kaushanscript: ['KaushanScript']
+				dancing_script: ['DancingScript', 'italic'],
+				open_sans: ['OpenSans'],
+				kaushan_script: ['KaushanScript']
 			}
 		},
 		keyframes: {

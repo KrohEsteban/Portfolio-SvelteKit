@@ -1,31 +1,31 @@
 <script>
 	//import perfil from '$lib/img/perfil.jpg';
-	import Svgestebankroh from '$lib/components/svgestebankroh.svelte';
+	import SVG_esteban_kroh from '$lib/components/SVG_esteban_kroh.svelte';
 </script>
 
 <div class="min-h-[90vh] border-b p-2 pt-5 border-solid border-gris-claro mb-10 font-dancingscript">
 	<enhanced:img
 		src="/static/perfil.webp"
 		alt="Esteban Kroh, programador web, foto de perfil."
-		class="object-cover w-auto h-auto rounded-[50%] animacionopacidad m-auto"
+		class="object-cover w-auto h-auto rounded-[50%] animation-opacity m-auto"
 		sizes="max(300px, 300px)"
 	/>
 	<h1 class="text-amarillo" aria-label="Esteban Kroh">
-		<Svgestebankroh />
+		<SVG_esteban_kroh />
 	</h1>
 	<!-- 
     <img src="./perfil.webp" alt='Esteban Kroh, programador web, foto de perfil.'
               priority={true}
               width={200}
               height={200}
-              className='object-cover w-auto h-auto rounded-[50%] animacionopacidad m-auto'
+              className='object-cover w-auto h-auto rounded-[50%] animation-opacity m-auto'
             />
             
          
           <h1 className='text-amarillo' aria-label='Esteban Kroh'>
           
             
-            <Svgestebankroh/>
+            <SVG_esteban_kroh/>
 
 
           </h1>

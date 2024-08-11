@@ -1,7 +1,8 @@
 # Etapa de construcción
 FROM node:20-alpine AS builder
 RUN yarn add sharp --ignore-engines \
-    && yarn global add npm-check-updates
+    && yarn global add npm-check-updates \
+    && yarn global add cspell @cspell/dict-es-es
 WORKDIR /app
 COPY package*.json ./
 RUN yarn install
