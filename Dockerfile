@@ -4,10 +4,9 @@ RUN yarn add sharp --ignore-engines \
     && yarn global add npm-check-updates
 WORKDIR /app
 COPY package*.json ./
-RUN yarn install
+RUN yarn install --frozen-lockfile
 COPY . .
 RUN yarn run build
-
 
 # Etapa de desarrollo
 FROM builder AS dev
@@ -23,6 +22,13 @@ WORKDIR /app
 COPY --from=builder /app/build ./build
 COPY --from=builder /app/package*.json ./
 ENV NODE_ENV=production
-RUN yarn install --production
+RUN yarn install --frozen-lockfile --production
 CMD ["node", "build"]
 EXPOSE 3000
+
+# Servidor nginx
+FROM nginx:alpine AS nginx
+COPY /nginx/nginx.conf /etc/nginx/templates/nginx.conf
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
+ENTRYPOINT ["/start.sh"]

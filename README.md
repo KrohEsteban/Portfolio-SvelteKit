@@ -13,9 +13,10 @@ docker compose up dev
 Para correr el contenedor en producción ejecutar los siguientes comando:
 
 ```bash
-cp .env.dist .env
-docker compose build prod
-docker compose run prod
+cp .env.example .env
+docker compose build prod nginx certbot
+docker compose run --rm certbot certonly --webroot --webroot-path=/var/www/certbot -d $DOMAIN_NAME
+docker compose run prod nginx certbot
 ```
 
 #### Comandos útiles
