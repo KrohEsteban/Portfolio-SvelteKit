@@ -1,13 +1,19 @@
 # Etapa de construcción
-FROM node:20-alpine AS builder
+FROM node:20-alpine AS deps
 RUN yarn add sharp --ignore-engines \
     && yarn global add npm-check-updates \
     && yarn global add cspell @cspell/dict-es-es
 WORKDIR /app
 COPY package*.json ./
+COPY svelte.config.js ./
 RUN yarn install
+
+FROM deps AS builder
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
+COPY --from=deps /app/.svelte-kit ./.svelte-kit
 COPY . .
-RUN yarn run build
+RUN yarn build
 
 # Etapa de desarrollo
 FROM builder AS dev
