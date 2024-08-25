@@ -28,7 +28,7 @@
   
   <main>
     <div>
-      <Bloques {data.Contenido} />
+      <Bloques children={data.Contenido} />
     </div>
   
     <div>

@@ -47,7 +47,7 @@
   <div>
     {#if data}
       {#await data.Contenido}
-        <Bloques content={data.Contenido} />
+      <Bloques children={data.Contenido} />
       {/await}
     {/if}
   </div>

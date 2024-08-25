@@ -53,7 +53,7 @@
       {#await data.Contenido}
         <div>
           <!-- Aquí asume que Bloques es un componente que puedes usar directamente -->
-          <Bloques content={data.Contenido} />
+          <Bloques children={data.Contenido} />
         </div>
       {/await}
     {/if}
