@@ -1,5 +1,30 @@
-<div class="handwriting">
-	<svg xmlns="http://www.w3.org/2000/svg" width="889.221" height="172.007" version="1.1">
+<style>
+  .handwriting {
+    transition: all 1s ease;
+    transition-delay: 1s;
+  }
+
+  .handwriting ::shadow ::after ::before {
+    stroke: #d4d3d3 !important;
+    color-scheme: #d4d3d3 !important;
+    color: #d4d3d3 !important;
+  }
+
+  .handwriting svg .animacion {
+    stroke-dasharray: 9000;
+    stroke-dashoffset: 9000;
+    animation: animacion 7s linear 1 forwards;
+  }
+
+  @keyframes animacion {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+</style>
+
+<h1 class="text-amarillo handwriting m-auto p-4 w-full h-full max-w-[600px]" aria-label="Esteban Kroh">
+	<svg viewBox="0 0 236 46">
 		<g transform="translate(8.15 -103.092)">
 			<g
 				mask="url(#untitled-u-masks)"
@@ -136,7 +161,7 @@
 						></path>
 					</g>
 				</g>
-				<mask id="untitled-u-masks" width="400%" height="400%" x="-150%" y="-150%" class="texto">
+				<mask id="untitled-u-masks" width="400%" height="400%" x="-150%" y="-150%" class="animacion">
 					<path
 						fill="none"
 						stroke="currentColor"
@@ -149,4 +174,4 @@
 			</g>
 		</g>
 	</svg>
-</div>
+</h1>

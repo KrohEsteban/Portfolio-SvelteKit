@@ -1,6 +1,8 @@
 <script lang="ts">
+	import type { Contact } from '$lib/types/contact';
     import { onMount } from 'svelte';
-    import contact from '$lib/data/contact.json';
+    
+    export let contact: Contact
 
     let menu = false;
     let entro = false;
@@ -25,7 +27,7 @@
     <nav class="md:flex md:justify-around relative">
     <div class="flex items-center justify-around">
         <a class="text-4xl text-inherit" href="/">
-        <span class="font-dancing_script">Esteban Kroh</span>
+        <span class="font-DancingScript">Esteban Kroh</span>
         </a>
         <button
             class="flex justify-center h-10 w-10 md:hidden aria-expanded:toggle-btn"
@@ -101,7 +103,7 @@
         </ul>
         <ul class="flex justify-center space-x-6 md:hidden py-10">
             {#each contact.docs as item}
-                <li class="w-10 sm:w-11 md:w-12" key={item.Nombre}>
+                <li class="w-10 sm:w-11 md:w-12" >
                 <a
                     class="stroke-none text-amarillo p-4 m-auto"
                     href={item.Url}

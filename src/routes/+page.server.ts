@@ -1,31 +1,31 @@
-import { json } from '@sveltejs/kit';
-import type { PageLoad } from './$types';
+import type { Pages } from '$lib/types/pages';
+import type { PageServerLoad  } from './$types';
 
-export const load: PageLoad = async ({ fetch }) => {
-  // Fetch data
-  const resPage = await fetch(`${import.meta.env.VITE_PAYLOAD_PUBLIC_SERVER_URL}/api/pages/646795d7aa702068d833159e`);
-  const data = await resPage.json();
+export const load: PageServerLoad  = async ({ fetch }) => {
 
-  const resContactos = await fetch(`${import.meta.env.VITE_PAYLOAD_PUBLIC_SERVER_URL}/api/contactos?limit=0`);
-  const contactos = await resContactos.json();
+  const index: Pages = await fetch(`${process.env.PAYLOAD_PUBLIC_SERVER_URL}/api/pages/646795d7aa702068d833159e`)
+    .then(response => {
+       return response.json()
+    })
+    .catch(() => {
+      return new Error('Error al renderizar la información para la página de incio del CMS');
+    })
 
-  const keywords = data.PalabrasClaves.map((item: { titulo: string }) => item.titulo);
+  const keywords = index.PalabrasClaves.map((item: { titulo: string }) => item.titulo);
 
-  // Set metadata
-  return json({
-    data,
-    contactos,
+  return {
+    index,
     metadata: {
-      title: data.Title,
-      description: data.Description,
+      title: index.Title,
+      description: index.Description,
       keywords,
       openGraph: {
-        title: data.Title,
-        description: data.Description,
+        title: index.Title,
+        description: index.Description,
         url: 'https://estebankroh.com',
-        siteName: 'Esteban Kroh, programador web.',
-        images: data.ImageOpenGraph.sizes.thumbnail.url,
+        siteName: 'Esteban Kroh, developer.',
+        images: index.ImageOpenGraph.sizes.thumbnail.url,
       },
     },
-  });
+  };
 };

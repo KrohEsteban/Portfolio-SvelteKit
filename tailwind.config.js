@@ -1,6 +1,4 @@
-import type { Config } from 'tailwindcss';
-
-const config: Config = {
+const config = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     extend: {
@@ -11,9 +9,9 @@ const config: Config = {
         amarillo: '#fbbf24'
       },
       fontFamily: {
-        dancing_script: ['DancingScript', 'italic'],
-        open_sans: ['OpenSans'],
-        kaushan_script: ['KaushanScript']
+        DancingScript: ['DancingScript', 'italic'],
+        OpenSans: ['OpenSans'],
+        KaushanScript: ['KaushanScript']
       }
     },
     keyframes: {
