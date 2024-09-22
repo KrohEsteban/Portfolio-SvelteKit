@@ -79,43 +79,6 @@
     @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]
   }
 
-  .sinbrillo {
-    margin: 0 auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    position: relative;
-    display: block;
-    border-radius: 6px;
-    text-align: center;
-    cursor: pointer;
-    overflow: hidden;
-    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
-    text-decoration: none;
-  }
-
-  .sinbrillo:after,
-  .sinbrillo:before {
-    width: 80px;
-    height: 300%;
-    content: '';
-    display: block;
-    background: rgba(255, 255, 255, 0.5);
-    transform: rotate(45deg);
-    top: -100%;
-    position: absolute;
-    transition: none;
-  }
-
-  .sinbrillo:before {
-    left: -500px;
- 
-  }
-
-  .sinbrillo:after {
-    right: -500px;
-
-  }
-
   .brillo {
     margin: 0 auto;
     margin-top: 15px;
@@ -168,17 +131,5 @@
       background: rgba(255, 255, 255, 0.1);
     }
   }
-
-  .animacionopacidad {
-    opacity: 0;
-    animation: animacionopacity 4s linear 1 forwards;
-  }
-
-  @keyframes animacionopacity {
-    to {
-      opacity: 1;
-    }
-  }
-
 
 }

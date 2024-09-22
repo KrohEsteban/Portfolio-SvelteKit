@@ -1,0 +1,45 @@
+[
+    {
+        "empresa": "Nubity",
+        "periodo": "06/23 - Actualidad",
+        "tecnologias": "PHP - Java - Symfony - MySql - DB2",
+        "descripcion": "Mi primera experiencia en una empresa multinacional, trabajando como desarrollador para proyectos destinados a un banco. En este rol, participo en el desarrollo de aplicaciones internas, que incluyeron desde aplicaciones completas en PHP y Symfony, hasta la creación de endpoints con Java para otras plataformas más grandes, conectándonos directamente a la base de datos del banco. Además, trabajé en el desarrollo de stored procedures dentro de la base de datos, los cuales generaban nuevas tablas para su posterior utilización. Este trabajo me permitió aprender sobre tecnologías que no conocía y demostrar mi capacidad para adaptarme a los cambios."
+    },      
+    {
+      "empresa": "Proyectos freelancers",
+      "periodo": "02/22 - Actualidad",
+      "tecnologias": " Docker - NextJS - SvelteKit - Tailwind - Wordpress - PayloadCMS - Strapi - MongoDB",
+      "descripcion": [
+        {
+            "proyecto": "Portfolio-Blog",
+            "periodo": "06/24 - 10/24",
+            "descripcion": "Reconstrucción completa de mi portfolio personal con SvelteKit, Typescript, y Tailwind."
+        },
+        {
+          "proyecto": "Agencia",
+          "periodo": "06/23 - 06/23",
+          "descripcion": "Desarrollo rápido de una página web para una agencia, utilizando NextJS y Tailwind."
+        },
+        {
+          "proyecto": "Portfolio-Blog",
+          "periodo": "04/23 - 06/23",
+          "descripcion": "Desarrollo de mi portfolio personal con PayloadCMS, NextJS, Typescript, y Tailwind."
+        },
+        {
+          "proyecto": "Costuras Deco",
+          "periodo": "03/23 - 04/23",
+          "descripcion": "Creación de un sitio e-commerce en Wordpress con integración de Mercado Pago."
+        },
+        {
+          "proyecto": "Clés en main",
+          "periodo": "02/23 - 03/23",
+          "descripcion": "Soporte al idioma inglés para un sitio web francés usando Docker, Strapi, y NextJS."
+        },
+        {
+          "proyecto": "Liga de veteranos",
+          "periodo": "02/22 - 02/23",
+          "descripcion": "Desarrollo de una página web para la liga de veteranos usando NextJS y MongoDB para la administración de resultados."
+        }
+      ]
+    }
+  ]

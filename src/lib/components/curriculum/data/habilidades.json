@@ -1,0 +1,31 @@
+[
+    {
+      "stack": "HTML - JS - CSS",
+      "progress": 70
+    },
+    {
+      "stack": "Tailwind - Bootstrap",
+      "progress": 50
+    },
+    {
+      "stack": "React - NextJS - Svelte - SvelteKit",
+      "progress": 65
+    },
+    {
+      "stack": "Php - Symfony",
+      "progress": 40
+    },
+    {
+      "stack": "Docker - Git - Bash",
+      "progress": 50
+    },
+    {
+      "stack": "Wordpress - Strapi - Payload CMS",
+      "progress": 65
+    },
+    {
+      "stack": "MongoDB - MySql - IBM DB2",
+      "progress": 50
+    }
+  ]
+  

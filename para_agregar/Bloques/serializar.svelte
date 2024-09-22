@@ -33,7 +33,6 @@
 {/if} -->
 
 <script lang="ts">
-  import escapeHTML from 'escape-html';
   export let node: any;
 
   let style = '';
@@ -58,10 +57,12 @@
 
 {#if node.code}
   <span class={style}>
-    <code class="px-2" innerHTML={escapeHTML(node.text)} />
+    <code class="px-2">
+      {@html node.text}
+    </code>
   </span>
 {:else}
   <span class={style}>
-    <span innerHTML={escapeHTML(node.text)} />
+    {@html node.text}
   </span>
 {/if}

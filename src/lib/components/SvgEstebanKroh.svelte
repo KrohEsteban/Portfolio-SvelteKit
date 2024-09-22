@@ -23,7 +23,7 @@
   }
 </style>
 
-<h1 class="text-amarillo handwriting m-auto p-4 w-full h-full max-w-[600px]" aria-label="Esteban Kroh">
+<h1 class="text-amarillo handwriting m-auto p-4 w-full sm:w-3/4 lg:w-full h-full max-w-[500px]" aria-label="Esteban Kroh">
 	<svg viewBox="0 0 236 46">
 		<g transform="translate(8.15 -103.092)">
 			<g
