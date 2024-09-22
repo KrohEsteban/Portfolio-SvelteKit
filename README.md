@@ -52,6 +52,7 @@ docker compose run --rm cli cspell "./"
 A continuación, se detalla cómo está configurado el entorno de desarrollo y producción, así como los aspectos relacionados con el manejo de SSL con Certbot y Nginx a modo de recordatorio para un futuro.
 
 #### Dockerfile
+
 El Dockerfile define las siguientes etapas de construcción:
 
 1. Etapa de Construcción (builder):
@@ -76,6 +77,7 @@ El Dockerfile define las siguientes etapas de construcción:
 - Utiliza envsubst en el script de inicio para reemplazar variables de entorno en la configuración de Nginx.
 
 #### Docker Compose
+
 El archivo compose.yaml define los siguientes servicios:
 
 1. cli:

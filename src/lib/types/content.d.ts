@@ -98,85 +98,83 @@
 //     ImageOpenGraph: ImageOpenGraph;
 // }
 
-
 // Tipos básicos
 export type TextFormat = {
-    text: string;
-    bold?: boolean;
-    italic?: boolean;
-    underline?: boolean;
-    strikethrough?: boolean;
-    code?: boolean;
+	text: string;
+	bold?: boolean;
+	italic?: boolean;
+	underline?: boolean;
+	strikethrough?: boolean;
+	code?: boolean;
 };
 
 export type PalabraClave = {
-    titulo: string;
-    id: string;
+	titulo: string;
+	id: string;
 };
 
 // Tipos para los bloques de contenido
 export type RichText = {
-    children: RichTextContent[];
-    id: string;
-    blockType: 'RichTextNormal' | 'Modal';
+	children: RichTextContent[];
+	id: string;
+	blockType: 'RichTextNormal' | 'Modal';
 };
 
 // Tipo para el contenido de RichText
 export type RichTextContent = {
-    children: Array<{
-        text?: TextFormat;
-        type?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'blockquote' | 'link';
-        linkType?: 'internal' | 'custom';
-        doc?: {
-            value: Content;
-            relationTo: string;
-        };
-        url?: string;
-    }>;
-    id?: string;
-    type?: 'RichTextNormal' | 'Modal' | 'ImageOpenGraph' | 'blockquote' | 'link';
+	children: Array<{
+		text?: TextFormat;
+		type?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'blockquote' | 'link';
+		linkType?: 'internal' | 'custom';
+		doc?: {
+			value: Content;
+			relationTo: string;
+		};
+		url?: string;
+	}>;
+	id?: string;
+	type?: 'RichTextNormal' | 'Modal' | 'ImageOpenGraph' | 'blockquote' | 'link';
 };
 
 // Tipo para imágenes
 export type ImageData = {
-    filename: string;
-    filesize: number;
-    width: number;
-    height: number;
-    mimeType: string;
-    url: string;
+	filename: string;
+	filesize: number;
+	width: number;
+	height: number;
+	mimeType: string;
+	url: string;
 };
 
 export type ImageSizes = {
-    thumbnail: ImageData;
+	thumbnail: ImageData;
 };
 
 export type ImageOpenGraph = {
-    id: string;
-    Alt: string;
-    webp: ImageData & { sizes: ImageSizes };
+	id: string;
+	Alt: string;
+	webp: ImageData & { sizes: ImageSizes };
 } & ImageData & {
-    sizes: ImageSizes;
-    createdAt: string;
-    updatedAt: string;
-};
-
+		sizes: ImageSizes;
+		createdAt: string;
+		updatedAt: string;
+	};
 
 export type ImageOpenGraphBlock = {
-    ImageOpenGraph: ImageOpenGraph;
-    id: string;
-    blockType: 'ImageOpenGraph';
+	ImageOpenGraph: ImageOpenGraph;
+	id: string;
+	blockType: 'ImageOpenGraph';
 };
 
 // Tipo principal
 export type Content = {
-    id: string;
-    Title: string;
-    Description: string;
-    Slug: string;
-    PalabrasClaves: PalabraClave[];
-    createdAt: string;
-    updatedAt: string;
-    Contenido: RichText[];
-    ImageOpenGraph: ImageOpenGraph;
+	id: string;
+	Title: string;
+	Description: string;
+	Slug: string;
+	PalabrasClaves: PalabraClave[];
+	createdAt: string;
+	updatedAt: string;
+	Contenido: RichText[];
+	ImageOpenGraph: ImageOpenGraph;
 };

@@ -1,27 +1,27 @@
 [
-    {
-      "label": "Teléfono",
-      "value": "2954-442060",
-      "link": "https://api.whatsapp.com/send?phone=+542954442060&text=Hola,%20%20vi%20tu%20numero%20en%20el%20CV!"
-    },
-    {
-      "label": "Sitioweb",
-      "value": "estebankroh.com",
-      "link": "https://estebankroh.com"
-    },
-    {
-      "label": "Github",
-      "value": "github.com/KrohEsteban",
-      "link": "https://github.com/KrohEsteban"
-    },
-    {
-      "label": "LinkedIn",
-      "value": "linkedin.com/in/estebankroh",
-      "link": "https://www.linkedin.com/in/estebankroh"
-    },
-    {
-      "label": "Correo",
-      "value": "krohesteban@gmail.com",
-      "link": "mailto:krohesteban@gmail.com"
-    }
+	{
+		"label": "Teléfono",
+		"value": "2954-442060",
+		"link": "https://api.whatsapp.com/send?phone=+542954442060&text=Hola,%20%20vi%20tu%20numero%20en%20el%20CV!"
+	},
+	{
+		"label": "Sitioweb",
+		"value": "estebankroh.com",
+		"link": "https://estebankroh.com"
+	},
+	{
+		"label": "Github",
+		"value": "github.com/KrohEsteban",
+		"link": "https://github.com/KrohEsteban"
+	},
+	{
+		"label": "LinkedIn",
+		"value": "linkedin.com/in/estebankroh",
+		"link": "https://www.linkedin.com/in/estebankroh"
+	},
+	{
+		"label": "Correo",
+		"value": "krohesteban@gmail.com",
+		"link": "mailto:krohesteban@gmail.com"
+	}
 ]

@@ -1,29 +1,7 @@
-<style>
-  .handwriting {
-    transition: all 1s ease;
-    transition-delay: 1s;
-  }
-
-  .handwriting ::shadow ::after ::before {
-    stroke: #d4d3d3 !important;
-    color-scheme: #d4d3d3 !important;
-    color: #d4d3d3 !important;
-  }
-
-  .handwriting svg .animacion {
-    stroke-dasharray: 9000;
-    stroke-dashoffset: 9000;
-    animation: animacion 7s linear 1 forwards;
-  }
-
-  @keyframes animacion {
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
-</style>
-
-<h1 class="text-amarillo handwriting m-auto p-4 w-full sm:w-3/4 lg:w-full h-full max-w-[500px]" aria-label="Esteban Kroh">
+<h1
+	class="text-amarillo handwriting m-auto p-4 w-full sm:w-3/4 lg:w-full h-full max-w-[500px]"
+	aria-label="Esteban Kroh"
+>
 	<svg viewBox="0 0 236 46">
 		<g transform="translate(8.15 -103.092)">
 			<g
@@ -161,7 +139,14 @@
 						></path>
 					</g>
 				</g>
-				<mask id="untitled-u-masks" width="400%" height="400%" x="-150%" y="-150%" class="animacion">
+				<mask
+					id="untitled-u-masks"
+					width="400%"
+					height="400%"
+					x="-150%"
+					y="-150%"
+					class="animacion"
+				>
 					<path
 						fill="none"
 						stroke="currentColor"
@@ -175,3 +160,28 @@
 		</g>
 	</svg>
 </h1>
+
+<style>
+	.handwriting {
+		transition: all 1s ease;
+		transition-delay: 1s;
+	}
+
+	.handwriting ::shadow ::after ::before {
+		stroke: #d4d3d3 !important;
+		color-scheme: #d4d3d3 !important;
+		color: #d4d3d3 !important;
+	}
+
+	.handwriting svg .animacion {
+		stroke-dasharray: 9000;
+		stroke-dashoffset: 9000;
+		animation: animacion 7s linear 1 forwards;
+	}
+
+	@keyframes animacion {
+		to {
+			stroke-dashoffset: 0;
+		}
+	}
+</style>
