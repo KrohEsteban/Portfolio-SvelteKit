@@ -1,14 +1,14 @@
-<script lang="ts">
+<script>
 	import { tweened } from 'svelte/motion';
 	import { cubicOut } from 'svelte/easing';
 	import { onMount } from 'svelte';
 
-	export let stack: string;
-	export let progress: number;
+	export let stack;
+	export let progress;
 
 	let progressWidth = tweened(0, { duration: 1000, easing: cubicOut });
 
-	function animateProgress(entries: IntersectionObserverEntry[]) {
+	function animateProgress(entries) {
 		entries.forEach((entry) => {
 			if (entry.isIntersecting) {
 				progressWidth.set(progress);

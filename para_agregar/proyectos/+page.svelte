@@ -1,8 +1,8 @@
-<script context="module" lang="ts">
+<script context="module" >
     export { load } from './+page.server';
   </script>
   
-  <script lang="ts">
+  <script>
     import Bloques from '$lib/components/Bloques.svelte';
     import Proyectos from '$lib/components/Proyectos.svelte';
   

@@ -1,4 +1,4 @@
-<script context="module" lang="ts">
+<script context="module" >
     export async function load({ params }) {
       const slug = params.slug;
   
@@ -43,7 +43,7 @@
     }
   </script>
   
-  <script lang="ts">
+  <script>
     export let data: any;
     export let contactos: any;
   </script>

@@ -1,4 +1,4 @@
-<script context="module" lang="ts">
+<script context="module" >
     export async function load() {
       const getData = async () => {
         const response = await fetch(`${import.meta.env.VITE_PAYLOAD_PUBLIC_SERVER_URL}/api/pages/64679656aa702068d83315cf`);
@@ -39,7 +39,7 @@
     }
   </script>
   
-  <script lang="ts">
+  <script>
     export let data: any;
     export let tecnologias: any;
   </script>

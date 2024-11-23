@@ -1,5 +1,5 @@
 <!-- src/routes/[your-page]/+page.svelte -->
-<script lang="ts">
+<script>
     export let data: any;
     export let etiquetas: any;
     export let blogs: any;

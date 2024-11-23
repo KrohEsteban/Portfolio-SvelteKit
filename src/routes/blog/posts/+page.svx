@@ -1,0 +1,9 @@
+---
+title: "Mi primer post"
+date: "2024-09-22"
+---
+
+# ¡Bienvenidos a mi blog!
+
+Este es un post escrito en **Markdown**, pero también puedes usar componentes de Svelte:
+

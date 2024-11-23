@@ -6,7 +6,7 @@
 <span style="font-size: 10em">
 	holaaa
 </span> -->
-<script lang="ts">
+<script>
     import { page } from '$app/stores';
 </script>
 

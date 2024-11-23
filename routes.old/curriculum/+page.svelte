@@ -1,6 +1,6 @@
 <script>
-	import LeftColumn from './LeftColumn.svelte';
-	import RightColumn from './RightColumn.svelte';
+	import LeftColumn from '$lib/components/curriculum/LeftColumn.svelte';
+	import RightColumn from '$lib/components/curriculum/RightColumn.svelte';
 
   export const metadata = {
     title: "Currículum de [Tu Nombre] - Desarrollador Web",

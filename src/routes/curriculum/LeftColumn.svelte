@@ -1,9 +1,9 @@
-<script lang="ts">
+<script>
 	import SvgEstebanKroh from '$lib/components/SvgEstebanKroh.svelte';
 	import ImgPerfil from '$lib/images/perfil.webp';
 	import Progressbar from '$lib/components/Progressbar.svelte';
-	import contactos from '$lib/components/curriculum/data/contactos.json';
-	import habilidades from '$lib/components/curriculum/data/habilidades.json';
+	import contactos from './data/contactos.json';
+	import habilidades from './data/habilidades.json';
 </script>
 
 <div class="block md:hidden p-6">

@@ -92,7 +92,7 @@
 {/if} -->
 
 <!-- 
-<script lang="ts">
+<script>
   import Serializar from './serializar.svelte';
   import { Link } from '@sveltejs/kit';
   import Image from 'svelte-image';
@@ -180,7 +180,7 @@
 {/if} -->
 
 
-<script lang="ts">
+<script>
   import Serializar from './serializar.svelte';
   import { Link } from '@sveltejs/kit';
   import Image from 'svelte-image';

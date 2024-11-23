@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	import HobbyCarousel from '$lib/components/hobby/HobbyCarousel.svelte';
 	import HobbyText from '$lib/components/hobby/HobbyText.svelte';
 </script>

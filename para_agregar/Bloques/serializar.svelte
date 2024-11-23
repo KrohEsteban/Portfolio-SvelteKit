@@ -32,7 +32,7 @@
   </span>
 {/if} -->
 
-<script lang="ts">
+<script>
   export let node: any;
 
   let style = '';

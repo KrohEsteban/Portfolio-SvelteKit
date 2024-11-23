@@ -1,9 +1,9 @@
 <!-- src/routes/[your-page]/+page.svelte -->
-<script context="module" lang="ts">
+<script context="module" >
     export { load } from './+page.server';
   </script>
   
-  <script lang="ts">
+  <script>
     export let data: any; // Usa un tipo adecuado en lugar de `any`
   </script>
   

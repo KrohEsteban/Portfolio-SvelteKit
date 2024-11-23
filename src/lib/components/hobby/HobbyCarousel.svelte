@@ -1,11 +1,14 @@
-<script lang="ts">
+<script>
 	import { onMount } from 'svelte';
 	import roller_1 from '$lib/images/roller-1.webp';
 	import roller_2 from '$lib/images/roller-2.webp';
 	import roller_3 from '$lib/images/roller-3.webp';
 
 	const images = [
-		{ src: roller_1, alt: 'Esteban Kroh, saltando en rollers.', text: 'La pasión mueve montañas.' },
+		{ 
+            src: roller_1,
+            alt: 'Esteban Kroh, saltando en rollers.',
+            text: 'La pasión mueve montañas.' },
 		{
 			src: roller_2,
 			alt: 'Esteban Kroh, clases de roller hockey para adultos.',
@@ -18,7 +21,7 @@
 		}
 	];
 	let current = 0;
-	let interval: number;
+	let interval;
 
 	function nextImage() {
 		current = (current + 1) % images.length;
