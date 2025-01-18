@@ -2,43 +2,23 @@
 	import LeftColumn from './LeftColumn.svelte';
 	import RightColumn from './RightColumn.svelte';
 
-  export const metadata = {
-    title: "Currículum de [Tu Nombre] - Desarrollador Web",
-    description: "Consulta el currículum de [Tu Nombre], un desarrollador web con experiencia en SvelteKit, PHP y más.",
-    keywords: "currículum, desarrollador web, SvelteKit, PHP, experiencia laboral, habilidades",
-  };
+	export const metadata = {
+		title: 'Currículum de [Tu Nombre] - Desarrollador Web',
+		description:
+			'Consulta el currículum de [Tu Nombre], un desarrollador web con experiencia en SvelteKit, PHP y más.',
+		keywords: 'currículum, desarrollador web, SvelteKit, PHP, experiencia laboral, habilidades'
+	};
 </script>
 
 <svelte:head>
-  <title>{metadata.title}</title>
-  <meta name="description" content={metadata.description} />
-  <meta name="keywords" content={metadata.keywords} />
-  <meta property="og:title" content={metadata.title} />
-  <meta property="og:description" content={metadata.description} />
-  <meta property="og:image" content="https://tusitio.com/ruta/a/imagen.jpg" />
-  <meta property="og:url" content="https://tusitio.com/curriculum" />
-  <link rel="canonical" href="https://tusitio.com/curriculum" />
-  <script type="application/ld+json">
-    {JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "[Tu Nombre]",
-      "jobTitle": "Desarrollador Web",
-      "url": "https://tusitio.com/curriculum",
-      "sameAs": [
-        "https://linkedin.com/in/tu_usuario",
-        "https://github.com/tu_usuario"
-      ],
-      "alumniOf": {
-        "@type": "EducationalOrganization",
-        "name": "Nombre de la Universidad"
-      },
-      "workLocation": {
-        "@type": "Place",
-        "name": "Nubity"
-      }
-    })}
-  </script>
+	<title>{metadata.title}</title>
+	<meta name="description" content={metadata.description} />
+	<meta name="keywords" content={metadata.keywords} />
+	<meta property="og:title" content={metadata.title} />
+	<meta property="og:description" content={metadata.description} />
+	<meta property="og:image" content="https://tusitio.com/ruta/a/imagen.jpg" />
+	<meta property="og:url" content="https://tusitio.com/curriculum" />
+	<link rel="canonical" href="https://tusitio.com/curriculum" />
 </svelte:head>
 
 <main class="min-h-screen p-4 font-sans pt-20">

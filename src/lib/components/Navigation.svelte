@@ -2,7 +2,6 @@
 	import { onMount } from 'svelte';
 
 	let menu = false;
-	let entro = false;
 
 	onMount(() => {
 		if (typeof window !== 'undefined') {
@@ -15,7 +14,6 @@
 	});
 
 	const toggleMenu = () => {
-		entro = true;
 		menu = !menu;
 		if (menu) {
 			openMenu();

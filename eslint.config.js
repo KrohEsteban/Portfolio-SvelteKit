@@ -17,7 +17,9 @@ export default [
 		}
 	},
 	{
-		files: ['**/*.svelte'],
-		ignores: ['build/', '.svelte-kit/', 'dist/']
+		files: ['**/*.svelte']
+	},
+	{
+		ignores: ['build/', '.svelte-kit/', 'node_modules/']
 	}
 ];

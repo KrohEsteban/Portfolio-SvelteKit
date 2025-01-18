@@ -1,8 +1,8 @@
-# Output
-node_modules
-.svelte-kit
-build
-certbot
+# Output folders
+node_modules/
+.svelte-kit/
+build/
+certbot/
 
 # Env
 .env
