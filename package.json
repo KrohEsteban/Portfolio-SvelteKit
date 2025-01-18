@@ -7,9 +7,9 @@
 		"dev": "vite dev --host",
 		"build": "vite build",
 		"preview": "vite preview --host",
-		"test": "npm run test:integration && npm run test:unit",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
+		"test": "npm run test:integration && npm run test:unit",
 		"test:integration": "playwright test",
 		"test:unit": "vitest"
 	},

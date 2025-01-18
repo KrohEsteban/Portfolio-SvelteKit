@@ -28,6 +28,18 @@ Instalar las dependencias del package.json para que no tire errores en el IDE:
 docker compose run --rm cli yarn install
 ```
 
+Revisar el formato del código con Prettier y ESLint:
+
+```bash
+docker compose run --rm cli yarn lint
+```
+
+Formatear el código automáticamente con Prettier:
+
+```bash
+docker compose run --rm cli yarn format
+```
+
 Revisar las versiones de las dependencias del package.json:
 
 ```bash
@@ -52,6 +64,24 @@ Revisa los errores ortográficos (check spelling)
 docker compose run --rm cli cspell "./"
 ```
 
+Ejecutar las pruebas (integración y unitarias):
+
+```bash
+docker compose run --rm cli yarn test
+```
+
+Ejecutar únicamente pruebas de integración:
+
+```bash
+docker compose run --rm cli yarn test:integration
+```
+
+Ejecutar únicamente pruebas unitarias:
+
+```bash
+docker compose run --rm cli yarn test:unit
+```
+
 ## Ayuda memoria sobre la configuración
 
 A continuación, se detalla cómo está configurado el entorno de desarrollo y producción, así como los aspectos relacionados con el manejo de SSL con Certbot y Nginx a modo de recordatorio para un futuro.
@@ -62,7 +92,7 @@ El Dockerfile define las siguientes etapas de construcción:
 
 1. Etapa de Construcción (builder):
 
-- Usa node:20-alpine para construir la aplicación.
+- Usa node:alpine para construir la aplicación.
 - Instala dependencias y construye el proyecto.
 
 2. Etapa de Desarrollo (dev):
