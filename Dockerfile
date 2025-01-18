@@ -1,18 +1,11 @@
 # Etapa de construcción
-FROM node:20-alpine AS deps
+FROM node:alpine AS builder
 RUN yarn add sharp --ignore-engines \
     && yarn global add npm-check-updates \
     && yarn global add cspell @cspell/dict-es-es
 WORKDIR /app
-COPY package*.json ./
-COPY svelte.config.js ./
-RUN yarn install
-
-FROM deps AS builder
-WORKDIR /app
-COPY --from=deps /app/node_modules ./node_modules
-COPY --from=deps /app/.svelte-kit ./.svelte-kit
 COPY . .
+RUN yarn install
 RUN yarn build
 
 # Etapa de desarrollo
@@ -27,7 +20,7 @@ EXPOSE 5173
 FROM builder AS prod
 WORKDIR /app
 COPY --from=builder /app/build ./build
-COPY --from=builder /app/package*.json ./
+COPY --from=builder /app/package.json ./package.json
 ENV NODE_ENV=production
 RUN yarn install --production
 CMD ["node", "build"]
