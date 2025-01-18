@@ -17,11 +17,16 @@ Para correr el contenedor en producción ejecutar los siguientes comandos:
 ```bash
 cp .env.example .env
 docker compose build
-docker compose run --rm certbot certonly --webroot --webroot-path=/var/www/certbot -d $DOMAIN_NAME
 docker compose up -d prod certbot nginx
 ```
 
 ## Comandos útiles
+
+Instalar las dependencias del package.json para que no tire errores en el IDE:
+
+```bash
+docker compose run --rm cli yarn install
+```
 
 Revisar las versiones de las dependencias del package.json:
 
