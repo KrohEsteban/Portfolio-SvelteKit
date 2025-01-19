@@ -2,8 +2,19 @@
 title: "Mi primer post"
 date: "2024-09-22"
 ---
+<script>
+	import Destello from '$lib/components/Destello.svelte';
+
+    let destello =  [
+			{
+				"text": "hola",
+				"link": { "text": "Acá tenés info!", "url": "/" }
+			}
+		];
+</script>
 
 # ¡Bienvenidos a mi blog!
 
 Este es un post escrito en **Markdown**, pero también puedes usar componentes de Svelte:
 
+<Destello sections={destello} />

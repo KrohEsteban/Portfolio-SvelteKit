@@ -1,4 +1,4 @@
-<script>
+<script module>
 	import LeftColumn from './LeftColumn.svelte';
 	import RightColumn from './RightColumn.svelte';
 

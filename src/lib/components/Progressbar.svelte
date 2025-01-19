@@ -3,8 +3,7 @@
 	import { cubicOut } from 'svelte/easing';
 	import { onMount } from 'svelte';
 
-	export let stack;
-	export let progress;
+	let { stack, progress } = $props();
 
 	let progressWidth = tweened(0, { duration: 1000, easing: cubicOut });
 

@@ -42,7 +42,7 @@
 						rel="noopener noreferrer"
 						aria-label={item.nombre}
 					>
-						{item.svg}
+						{@html item.svg}
 					</a>
 				</li>
 			{/each}

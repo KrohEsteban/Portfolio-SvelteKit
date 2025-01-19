@@ -1,5 +1,5 @@
 <script>
-	import experiencias from './data/experiencias.json';
+	import experiencias from '$lib/data/curriculum/experiencias.json';
 	import SvgEstebanKroh from '$lib/components/SvgEstebanKroh.svelte';
 </script>
 

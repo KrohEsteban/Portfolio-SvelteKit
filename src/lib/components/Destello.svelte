@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import { writable } from 'svelte/store';
 
-	export let sections = []; // Array de secciones con texto y enlaces
+	let { sections } = $props();
 
 	const isVisible = writable(false);
 

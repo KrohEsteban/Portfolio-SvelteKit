@@ -6,19 +6,19 @@
 	@font-face {
 		font-family: 'DancingScript';
 		src: url('/font/DancingScript.ttf');
-		weight: '700';
+		font-weight: '700';
 	}
 
 	@font-face {
 		font-family: 'OpenSans';
 		src: url('/font/OpenSans.ttf');
-		weight: '400';
+		font-weight: '400';
 	}
 
 	@font-face {
 		font-family: 'KaushanScript';
 		src: url('/font/KaushanScript.ttf');
-		weight: '400';
+		font-weight: '400';
 	}
 
 	:root {
