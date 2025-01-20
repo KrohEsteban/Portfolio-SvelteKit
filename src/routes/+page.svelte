@@ -1,5 +1,5 @@
 <script>
-	import ImgPerfil from '$lib/images/perfil.webp';
+	import ImgPerfil from '$lib/images/perfil.webp?enhanced';
 	import SvgEstebanKroh from '$lib/components/SvgEstebanKroh.svelte';
 	import Destello from '$lib/components/Destello.svelte';
 	import data from '$lib/data/home.json';
@@ -20,7 +20,7 @@
 
 <div class="min-h-[85vh] pt-5 mb-10 w-full">
 	<div class="m-auto">
-		<img
+		<enhanced:img
 			src={ImgPerfil}
 			alt="Esteban Kroh, developer, foto de perfil."
 			class="image rounded-[50%] delay-150 w-36 sm:w-48 md:w-60 h-auto m-auto"

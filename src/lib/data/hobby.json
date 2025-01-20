@@ -4,17 +4,17 @@
 	"carousel": {
 		"images": [
 			{
-				"src": "/images/roller-1.webp",
+				"src": "roller1",
 				"alt": "Esteban Kroh, saltando en rollers.",
 				"text": "La pasión mueve montañas."
 			},
 			{
-				"src": "/images/roller-2.webp",
+				"src": "roller2",
 				"alt": "Esteban Kroh, clases de roller hockey para adultos.",
 				"text": "El compromiso hace al crecimiento."
 			},
 			{
-				"src": "/images/roller-3.webp",
+				"src": "roller3",
 				"alt": "Esteban Kroh, clases de rollers para niños.",
 				"text": "El futuro, lo creamos nosotros."
 			}

@@ -1,9 +1,18 @@
 <script>
 	import { onMount } from 'svelte';
 	import data from '$lib/data/hobby.json';
+	import roller1 from '$lib/images/roller1.webp?enhanced';
+	import roller2 from '$lib/images/roller2.webp?enhanced';
+	import roller3 from '$lib/images/roller3.webp?enhanced';
 
 	let current = 0;
 	let interval;
+
+	const imageMap = {
+		roller1: roller1,
+		roller2: roller2,
+		roller3: roller3
+	};
 
 	function nextImage() {
 		current = (current + 1) % data.carousel.images.length;
@@ -23,8 +32,8 @@
 			<div
 				class={`absolute inset-0 transition-opacity duration-1000 ${i === current ? 'opacity-100' : 'opacity-0'}`}
 			>
-				<img
-					src={image.src}
+				<enhanced:img
+					src={imageMap[image.src]}
 					alt={image.alt}
 					class="absolute inset-0 w-full h-full object-cover"
 					placeholder="blur"
