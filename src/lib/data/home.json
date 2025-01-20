@@ -1,19 +1,19 @@
 {
 	"metadata": {
-		"title": "Desarrollador Web | SvelteKit, PHP y Docker",
-		"description": "Soy un desarrollador web especializado en SvelteKit y PHP. Aquí encontrarás mi currículum, proyectos y más.",
-		"keywords": "desarrollador web, SvelteKit, PHP, Docker, currículum, proyectos"
+		"title": "Desarrollador Web | Soluciones Tecnológicas y Automación",
+		"description": "Soy un desarrollador web enfocado en resolver problemas complejos mediante tecnologías modernas y prácticas eficientes. Aquí encontrarás mi experiencia, proyectos y más.",
+		"keywords": "desarrollador web, tecnología, soluciones, automatización, problemas complejos, innovación, proyectos"
 	},
 	"profession": {
-		"title": "Web Developer"
+		"title": "Desarrollador Web"
 	},
 	"text": {
-		"title": "Buscas programador? Contáctame!",
+		"title": "¿Necesitas soluciones tecnológicas? ¡Hablemos!",
 		"paragraphs": [
-			"Soy Esteban Kroh, programador web de Santa Rosa, La Pampa. Informático por vocación y emprendedor por naturaleza, contáctame para completar tus proyectos!",
-			"Como programador web apasionado por mi trabajo, mi objetivo es ayudar a tu empresa a destacar en el mundo digital. Con amplios conocimientos en diferentes tecnologías y una sólida base en la lógica de programación, puedo ofrecerte soluciones personalizadas que se adapten a tus necesidades y a las de tus clientes.",
-			"Con mi enfoque en la calidad y la satisfacción del usuario final, trabajo con las últimas tecnologías para crear aplicaciones web modernas y atractivas. Si necesitas una página web desde cero, una actualización de la existente o una integración de sistemas, estaré encantado de discutir tus objetivos y llevarlos a cabo de manera eficiente.",
-			"Mi hobbie es patinar, así como me enamoré de la programación también me enamoré de los rollers y doy clases de rollers en Urban Rollers La Pampa hace ya varios años. Además, mi experiencia como profe de rollers me ha enseñado la importancia de la paciencia, la perseverancia y la creatividad en cada proyecto. Si estás buscando un programador web comprometido y entusiasta para tu equipo, ¡no dudes en contactarme!"
+			"Soy Esteban Kroh, un desarrollador web apasionado por crear soluciones tecnológicas que simplifiquen procesos y generen impacto. Mi experiencia abarca desde el desarrollo de aplicaciones modernas hasta la automatización de tareas repetitivas, utilizando herramientas como Docker y frameworks como SvelteKit y Next.js.",
+			"Me especializo en identificar problemas, diseñar soluciones eficientes y ejecutarlas con precisión. Con un enfoque práctico y orientado a resultados, trabajo con tecnologías backend como PHP y bases de datos como MySQL y DB2 para ofrecer aplicaciones escalables y robustas.",
+			"Ya sea construyendo una página web desde cero, optimizando sistemas existentes o integrando herramientas complejas, mi prioridad es siempre la calidad y la satisfacción del cliente. Creo en la colaboración, la innovación y el aprendizaje continuo como pilares para superar cualquier desafío.",
+			"Además de mi experiencia técnica, también soy un apasionado del roller hockey. Doy clases y he organizado torneos nacionales, lo que me ha enseñado la importancia del trabajo en equipo, la perseverancia y la creatividad. Si estás buscando un desarrollador comprometido y entusiasta, ¡no dudes en contactarme!"
 		]
 	},
 	"contact": [
@@ -46,16 +46,16 @@
 	"flash": {
 		"sections": [
 			{
-				"text": "¿Sos emprendedor y querés una página para tu negocio?",
-				"link": { "text": "Acá tenés info!", "url": "/blog" }
+				"text": "¿Tienes un problema técnico que resolver?",
+				"link": { "text": "Descubre cómo puedo ayudarte.", "url": "/blog" }
 			},
 			{
-				"text": "¿Sos parte de una empresa y buscás colaboradores?",
-				"link": { "text": "Acá tenés info sobre mis aptitudes!", "url": "/curriculum" }
+				"text": "¿Buscas un colaborador enfocado en soluciones?",
+				"link": { "text": "Conoce mis habilidades y experiencia.", "url": "/curriculum" }
 			}
 		]
 	},
 	"quote": {
-		"text": "El objetivo de contratar buenos profesionales es poder tener la tranquilidad que van a hacer el trabajo como si fueran dueños de la empresa."
+		"text": "La tecnología no solo resuelve problemas, también abre puertas a nuevas oportunidades."
 	}
 }

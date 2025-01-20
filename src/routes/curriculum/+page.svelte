@@ -1,21 +1,16 @@
 <script module>
 	import LeftColumn from './LeftColumn.svelte';
 	import RightColumn from './RightColumn.svelte';
+	import data from '$lib/data/curriculum/metadata.json';
 
-	export const metadata = {
-		title: 'Currículum de [Tu Nombre] - Desarrollador Web',
-		description:
-			'Consulta el currículum de [Tu Nombre], un desarrollador web con experiencia en SvelteKit, PHP y más.',
-		keywords: 'currículum, desarrollador web, SvelteKit, PHP, experiencia laboral, habilidades'
-	};
 </script>
 
 <svelte:head>
-	<title>{metadata.title}</title>
-	<meta name="description" content={metadata.description} />
-	<meta name="keywords" content={metadata.keywords} />
-	<meta property="og:title" content={metadata.title} />
-	<meta property="og:description" content={metadata.description} />
+	<title>{data.title}</title>
+	<meta name="description" content={data.description} />
+	<meta name="keywords" content={data.keywords} />
+	<meta property="og:title" content={data.title} />
+	<meta property="og:description" content={data.description} />
 	<meta property="og:image" content="https://tusitio.com/ruta/a/imagen.jpg" />
 	<meta property="og:url" content="https://tusitio.com/curriculum" />
 	<link rel="canonical" href="https://tusitio.com/curriculum" />
@@ -35,7 +30,7 @@
 					<div
 						class="hidden md:block absolute top-0 -left-52 w-56 h-56 bg-gris-oscuro rounded-br-full"
 					></div>
-					<LeftColumn />
+					<LeftColumn data={data} />
 				</div>
 			</div>
 			<div class="w-full md:w-2/3">

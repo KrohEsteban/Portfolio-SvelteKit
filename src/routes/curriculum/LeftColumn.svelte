@@ -4,6 +4,8 @@
 	import Progressbar from '$lib/components/Progressbar.svelte';
 	import contactos from '$lib/data/curriculum/contactos.json';
 	import habilidades from '$lib/data/curriculum/habilidades.json';
+
+	let { data } = $props();
 </script>
 
 <div class="block md:hidden p-6">
@@ -23,12 +25,9 @@
 
 <div class="mb-6">
 	<h3 class="text-xl font-bold p-3">
-		<span class="block text-amarillo">¿Buscas programador?</span> ¡Contáctame!
+		<span class="block text-amarillo">¿Buscas desarrollador web?</span> ¡Contáctame!
 	</h3>
-	<p class="text-sm leading-relaxed">
-		Soy Esteban Kroh, developer de Santa Rosa, La Pampa, apasionado por la informática y el
-		emprendimiento. 💻
-	</p>
+	<p class="text-sm leading-relaxed">{data.metadata.description}</p>
 </div>
 
 <h3 class="text-xl font-semibold mt-6 mb-2">Habilidades Técnicas</h3>
