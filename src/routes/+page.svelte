@@ -2,9 +2,9 @@
 	import ImgPerfil from '$lib/images/perfil.webp?enhanced';
 	import SvgEstebanKroh from '$lib/components/SvgEstebanKroh.svelte';
 	import Destello from '$lib/components/Destello.svelte';
-	import data from '$lib/data/home.json';
+	import home from '$lib/data/home.json';
 
-	export const metadata = data.metadata;
+	export const metadata = home.metadata;
 </script>
 
 <svelte:head>
@@ -28,15 +28,15 @@
 	</div>
 	<SvgEstebanKroh />
 	<div class="m-auto w-full space-y-10 font-KaushanScript">
-		<h2>{data.profession.title}</h2>
+		<h2>{home.profession.title}</h2>
 	</div>
 	<div class="m-auto w-full space-y-6 font-KaushanScript">
 		<h3>Contacto:</h3>
 		<ul class="flex justify-center space-x-6">
-			{#each data.contact as item}
+			{#each home.contact as item}
 				<li class="w-10 sm:w-11 md:w-12">
 					<a
-						class="stroke-none data.text-gris-claro m-auto"
+						class="stroke-none text-gris-claro m-auto"
 						href={item.url}
 						target="_blank"
 						rel="noopener noreferrer"
@@ -50,15 +50,15 @@
 	</div>
 	<div class="border-b m-2 p-10 border-solid border-gris-claro"></div>
 	<div class="m-auto w-full p-6">
-		<h3>{data.text.title}</h3>
-		{#each data.text.paragraphs as paragraph}
+		<h3>{home.text.title}</h3>
+		{#each home.text.paragraphs as paragraph}
 			<p class="p-2">{paragraph}</p>
 		{/each}
 	</div>
 </div>
-<Destello sections={data.flash.sections} />
-<h4 class="py-20 px-10 m-auto data.text-center font-KaushanScript">
-	"{data.quote.text}"
+<Destello sections={home.flash.sections} />
+<h4 class="py-20 px-10 m-auto text-center font-KaushanScript">
+	"{home.quote.text}"
 </h4>
 
 <style>

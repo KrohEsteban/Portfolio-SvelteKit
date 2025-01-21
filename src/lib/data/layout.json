@@ -1,0 +1,11 @@
+{
+    "navigation": {
+      "home": "Inicio",
+      "curriculum": "Curriculum",
+      "blog": "Blog",
+      "hobby": "Hobby"
+    },
+    "footer":"Construido por",
+    "name":"Esteban Kroh",
+    "title": "Esteban Kroh, desarrollador web."
+}

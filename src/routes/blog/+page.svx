@@ -18,3 +18,42 @@ date: "2024-09-22"
 Este es un post escrito en **Markdown**, pero también puedes usar componentes de Svelte:
 
 <Destello sections={destello} />
+
+# Blog
+
+Bienvenido a mi sección de blog, donde comparto mi experiencia y conocimientos como programador web. Aquí encontrarás artículos sobre el desarrollo de páginas web, consejos y trucos útiles para mejorar tus sitios web, y mucho más. Desde lenguajes de programación y frameworks hasta herramientas y plataformas, estaré cubriendo una amplia variedad de temas para ayudarte a mantener tus proyectos web actualizados y funcionando sin problemas. ¡Espero que encuentres mis publicaciones interesantes e informativas!
+
+## Palabras Clave
+
+- Blog
+- Páginas Web
+- Programador Web
+- Desarrollo Web
+- Esteban Kroh
+- Blog de Páginas Web
+
+![Sección de blog de la página web de Esteban Kroh.](https://api.estebankroh.com/media/blog-629x629.webp)
+
+---
+
+# ¡Bienvenido a mi blog personal!
+
+Aquí encontrarás información actualizada y consejos útiles sobre el mundo de la programación web. Como programador apasionado, me complace compartir mis conocimientos y experiencias contigo.
+
+Explora los diferentes artículos y tutoriales que he preparado para ti. Cada uno de ellos aborda temas relevantes, desde las diferentes opciones de crear una web hasta mejores prácticas de diseño y optimización de rendimiento.
+
+Aprende cómo crear sitios web interactivos, optimizar su velocidad de carga, implementar tecnologías de vanguardia y descubrir las últimas tendencias en diseño y desarrollo web. Estoy comprometido en brindarte contenido de calidad que te ayude a alcanzar tus metas.
+
+¡No pierdas la oportunidad de expandir tus habilidades y mantenerte al día en esta industria en constante evolución! Haz clic en los botones a continuación para explorar mis publicaciones más recientes y profundizar en temas específicos.
+
+Si tienes alguna pregunta o sugerencia, no dudes en contactarme. ¡Disfruta tu visita y espero que encuentres inspiración en mi blog!
+
+¡Bienvenido a mi mundo web!
+
+<ul class="flex flex-col items-center justify-center min-h-screen space-y-6 text-white">
+	<li><a href="/blog/como-comprar-rollers" class="link">como-comprar-rollers</a></li>
+	<li><a href="/blog/como-contratar-programador" class="link">como-contratar-programador</a></li>
+	<li><a href="/blog/crear-mi-web-o-contratar-a-un-profecional" class="link">crear-mi-web-o-contratar-a-un-profecional</a></li>
+	<li><a href="/blog/porque-wordpress-es-mejor" class="link">porque-wordpress-es-mejor</a></li>
+	<li><a href="/blog/que-necesito-para-roller-hockey" class="link">que-necesito-para-roller-hockey</a></li>
+</ul>
